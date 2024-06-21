@@ -5,6 +5,20 @@ let protoArray4 = "Comma-spaces, might, require, typing, caution";
 
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
+
+console.log(protoArray1.includes(",", ";", " "));
+protoArray1.split(",").reverse().join(",");
+
+console.log(protoArray2.includes(";"));
+protoArray2.split(";").reverse().join(",");
+
+console.log(protoArray3.includes(" "));
+protoArray3.split(" ").reverse().join(",");
+
+console.log(protoArray4.includes(","));
+protoArray4.split(",").reverse().join(",");
+
+
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
