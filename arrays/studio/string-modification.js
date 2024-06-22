@@ -9,7 +9,7 @@ modifiedStr = lastStr.concat(firstStr);
 
 
 //Use a template literal to print the original and modified string in a descriptive phrase.
-console.log(`We removed the first three letters ${firstStr} and added them to ${lastStr} with the result of ${modifiedStr}.`);
+console.log(`We removed the first three letters "${firstStr}" from ${str} and added them to 3${lastStr} with the result of ${modifiedStr}.`);
 
 //2) Modify your code to accept user input. Query the user to enter the number of letters that will be relocated.
 let userInput = input.question("Input the number of letters to be relocated: ");
