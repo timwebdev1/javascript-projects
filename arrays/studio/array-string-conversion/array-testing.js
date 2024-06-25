@@ -6,25 +6,18 @@ let protoArray4 = "Comma-spaces, might, require, typing, caution";
 strings = [protoArray1, protoArray2, protoArray3, protoArray4];
 
 
-console.log(protoArray1.includes(",", ";", " "));
-protoArray1.split(",").reverse().join(",");
-
-console.log(protoArray2.includes(";"));
-protoArray2.split(";").reverse().join(",");
-
-console.log(protoArray3.includes(" "));
-protoArray3.split(" ").reverse().join(",");
-
-console.log(protoArray4.includes(","));
-protoArray4.split(",").reverse().join(",");
-
 
 //2) 
 function reverseCommas() {
 	//TODO: 1. create and instantiate your variables.
-	let check;
-	let output;
+	let check = protoArray1.includes(',');
+	let output = protoArray1.split(",").reverse().join();
 	//TODO: 2. write the code required for this step
+	if (check == true) {
+		(output)
+	} else {
+		console.log("No commas.")
+	}
 
 	//NOTE: For the code to run properly, you must return your output.  this needs to be the final line of code within the function's { }.
 	return output;
@@ -32,31 +25,44 @@ function reverseCommas() {
 
 //3)
 function semiDash() {
-	let check;
-	let output;
+	let check = protoArray2.includes(';');
+	let output = protoArray2.split(";").sort().join('-');
 //TODO: write the code required for this step
-
+if (check == true) {
+	(output)
+} else {
+	console.log("No semicolons.")
+}
   
 	return output;
 }
 
 //4)
 function reverseSpaces() {
-	let check;
-	let output;
+	let check = protoArray3.includes(" ");
+	let output = protoArray3.split(" ").sort().reverse().join(" ");
   //TODO: write the code required for this step
-
+	if (check == true) {
+		(output)
+	} else {
+		console.log("No reverse spaces.")
+	}
 	return output;
 }
 
 //5)
 function commaSpace() {
-	let check;
-	let output;
+	let check = protoArray4.includes(", ");
+	let output = protoArray4.split(", ").reverse().join();
 	//TODO: write the code required for this step
-  
+  if (check == true) {
+		(output)
+	} else {
+		console.log("No extra spaces.")
+	}
 	return output;
 }
+
 
 // NOTE: Don't add or modify any code below this line or your program might not run as expected.
 module.exports = {
