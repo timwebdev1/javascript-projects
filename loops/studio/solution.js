@@ -8,7 +8,6 @@ let veggies = ['peas', 'green beans', 'kale', 'edamame', 'broccoli', 'asparagus'
 let beverages = ['juice', 'milk', 'water', 'soy milk', 'soda', 'tea'];
 let desserts = ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi'];
 
-
 function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   let pantry = [protein, grains, veggies, beverages, desserts];
   let meals = [];
