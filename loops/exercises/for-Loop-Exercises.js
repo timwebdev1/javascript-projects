@@ -15,7 +15,7 @@ for (let i = 12; i >= -14; i = i - 2) {
   console.log(i);
 }
 
-for (let i = 50; i >= 20; i--) {
+for (let i = 48; i >= 20; i = i -3) {
   console.log(i);
 }
 /*Exercise #2: 
@@ -25,20 +25,22 @@ Initialize two variables to hold the string “LaunchCode” and the array [1, 5
 Construct ``for`` loops to accomplish the following tasks:
   a. Print each element of the array to a new line.
   b. Print each character of the string - in reverse order - to a new line. */ 
-let str = 'LaunchCode';
+
 let arr = [1, 5, 'LC101', 'blue', 42];
+let course = 'LaunchCode';
 let reversed = "";
 
 for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
 }
-// 2.2 is not completed. error of i is not defined
-// for (let i = 0; i < str.length; i++); {
-//   reversed = str[i] + reversed;
-  
-// }
-// console.log(reversed);
 
+for (let i = 0; i < course.length; i++) {
+  //reversed = course[i] + reversed;
+  reversed = course.split('').reverse().join('');
+  console.log(reversed[i]);
+}
+//Prints LauchCode in reverse but not on separate lines
+console.log(reversed); 
 
 
 
