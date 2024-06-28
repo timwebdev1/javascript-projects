@@ -3,6 +3,18 @@
 // Part One: Reverse Characters
 
 // 1. Define the function as reverseCharacters. Give it one parameter, which will be the string to reverse.
+function reverseCharacters(stringToReverse) {
+
+  if (typeof stringToReverse === 'string') {
+    return stringToReverse.split("").reverse().join('');
+  } else if (typeof stringToReverse === 'number') {
+    return Number(String(stringToReverse).split("").reverse().join(''));
+  }
+
+}
+let myString = 8675309;
+console.log(reverseCharacters(myString));
+
 // 2. Within the function, split the string into an array, then reverse the array.
 // 3. Use join to create the reversed string and return that string from the function.
 // 4. Below the function, define and initialize a variable to hold a string.
@@ -30,9 +42,30 @@ let arrayTest1 = ['apple', 'potato', 'Capitalized Words'];
 let arrayTest2 = [123, 8897, 42, 1168, 8675309];
 let arrayTest3 = ['hello', 'world', 123, 'orange'];
 
+function completeReversal(arrToReverse) {
+  let arrReverse = [];
+  for (let i = 0; i < arrToReverse.length; i++) {
+    arrReverse.unshift(reverseCharacters(arrToReverse[i]));
+  }
+  return arrReverse;
+}
+console.log(completeReversal(arrayTest1));
+console.log(completeReversal(arrayTest2));
+console.log(completeReversal(arrayTest3));
 // Bonus Missions
 
 // 1. Have a clear, descriptive name like funPhrase.
+function funPhrase(str) {
+  if (str.length <= 3) {
+    return str.slice(str.length-1);
+  } else {
+    return str.slice(0,3);
+  }
+}
+let str1 = "functions Rock!";
+console.log(funPhrase('apple'));
+console.log(funPhrase('be'));
+console.log(`We put the ${funPhrase(str1)} in ${str1}.`);
 // 2. Retrieve only the last character from strings with lengths of 3 or less.
 // 3. Retrieve only the first 3 characters from strings with lengths larger than 3.
 // 4. Use a template literal to return the phrase We put the '___' in '___'. Fill the first blank with the modified string, and fill the second blank with the original string.
@@ -45,6 +78,11 @@ let arrayTest3 = ['hello', 'world', 123, 'orange'];
 // Area of rectangle equal to length x width
 
 // 1. Define a function with the required parameters to calculate the area of a rectangle.
+function areaOfRectangle(length, width=length) {
+  return length * width;
+}
+console.log(`The area is ${areaOfRectangle(2,4)}cm^2.`);
+console.log(`The area is ${areaOfRectangle(2)}cm^2.`);
 // 2. The function should return the area, NOT print it.
 // 3. Call your area function by passing in two arguments - the length and width.
 // 4. If only one argument is passed to the function, then the shape is a square. Modify your code to deal with this case.
