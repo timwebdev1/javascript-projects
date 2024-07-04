@@ -8,15 +8,17 @@ console.log(num.length);
 str = num.toString(),
 len = str.length;
 
-console.log(len);
+
 
 
 //Follow up: Print the number of digits in a DECIMAL value (e.g. num = 123.45 has 5 digits but a length of 6).
-num = 1001.0;
+console.log(len);
 
-//Experiment! What if num could be EITHER an integer or a decimal?  Add an if/else statement so your code can handle both cases.
 if (String(num).includes('.')){
   console.log(String(num).length-1);
-  } else {
+  } 
+
+//Experiment! What if num could be EITHER an integer or a decimal?  Add an if/else statement so your code can handle both cases.
+else {
   console.log(String(num).length);
   }
