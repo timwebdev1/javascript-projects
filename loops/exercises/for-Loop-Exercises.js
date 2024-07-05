@@ -51,7 +51,7 @@ console.log(reversed);
   let evens = [];
   let odds = [];
 
-  for (let i=0; i < arr1.length; i++) {
+  for (let i = 0; i < arr1.length; i++) {
     if (arr1[i] % 2 == 0) {
       evens.push(arr1[i]);
     } else {
