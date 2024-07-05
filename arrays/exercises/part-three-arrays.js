@@ -1,4 +1,5 @@
 let cargoHold = [1138, 'space suits', 'parrot', 'instruction manual', 'meal packs', 'space tether', '20 meters'];
+console.log(cargoHold);
 
 //Use splice to make the following changes to the cargoHold array. Be sure to print the array after each step to confirm your updates.
 

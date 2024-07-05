@@ -9,9 +9,10 @@ let element26 = ['iron', 'Fe', 55.85];
 let table = [];
 table.push(element1, element2, element26);
 console.log(table);
+
 //3) Use bracket notation to examine the difference between printing 'table' with one index vs. two indices (table[][]).
 console.log(table[1]);
-console.log(table[1][1]);
+console.log(table[0][1]);
 
 //4) Using bracket notation and the table array, print the mass of element1, the name for element 2 and the symbol for element26.
 console.log(table[0][2]);
@@ -20,7 +21,7 @@ console.log(table[2][1]);
 
 //5) 'table' is an example of a 2-dimensional array. The first “level” contains the element arrays, and the second level holds the name/symbol/mass values. Experiment! Create a 3-dimensional array and print out one entry from each level in the array.
 
-/* I have no idea how to create the third level. Does it split off of an item in another level?
+// /* I have no idea how to create the third level. Does it split off of an item in another level?
 let num1 = [1, 2, 3];
 let color1 = ['red', 'blue'];
 let nothingSpecial1 = ['earth', true, 7];

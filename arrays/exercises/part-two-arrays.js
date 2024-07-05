@@ -1,4 +1,5 @@
 let cargoHold = ['oxygen tanks', 'space suits', 'parrot', 'instruction manual', 'meal packs', 'slinky', 'security blanket'];
+console.log(cargoHold);
 
 //1) Use bracket notation to replace ‘slinky’ with ‘space tether’. Print the array to confirm the change.
 cargoHold[5] = 'space tether';
@@ -18,5 +19,4 @@ cargoHold.unshift(1138);
 console.log(cargoHold);
 
 //5) Use a template literal to print the final array and its length.
-console.log(cargoHold.length);
 console.log(`${cargoHold}, (${cargoHold.length})`)
