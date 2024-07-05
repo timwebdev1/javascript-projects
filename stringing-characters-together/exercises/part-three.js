@@ -6,15 +6,22 @@ let language = 'JavaScript';
 let str1 = language.slice(0, 1);
 let str2 = language.slice(4, 5);
 
-console.log(str1.concat('', str2));
+console.log(str1 + str2);
 
 //2. Without using slice(), use method chaining to accomplish the same thing.
+console.log(language);
+// let letterLocation1 = language.indexOf("J");
+// let letterLocation2 = language.indexOf("S");
+
+// console.log(letterLocation1);
+// console.log(letterLocation2);
+
+
+
+//3. Use bracket notation and a template literal to print, "The abbreviation for 'JavaScript' is 'JS'."
 let firstInitial = language[0];
 let fourthInitial = language[4];
 
-console.log(firstInitial + fourthInitial);
-
-//3. Use bracket notation and a template literal to print, "The abbreviation for 'JavaScript' is 'JS'."
 console.log(`The abbreviaton for 'JavaScript' is '${firstInitial + fourthInitial}'.`)
 
 //4. Just for fun, try chaining 3 or more methods together, and then print the result.
