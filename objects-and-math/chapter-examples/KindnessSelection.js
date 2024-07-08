@@ -7,8 +7,11 @@ function randomSelection(arr){
  
  let words = ['Hello', 'World', 'Python', 'JavaScript', 'Rutabaga'];
  
- for (i=0; i < 8; i++){
+ let newArray = [];
+ 
+ for (i=0; i < 2; i++){
    console.log(randomSelection(happiness));
+   console.log(randomSelection(words));
  }
  
  //Experiment with the code above. Try to:
