@@ -20,7 +20,3 @@ module.exports = {
     evenOrOdd: evenOrOdd,
     randomArrayElement: randomArrayElement
 }
-
-// module.exports = isPalindrome;
-// module.exports = evenOrOdd;
-// module.exports = randomArrayElement;

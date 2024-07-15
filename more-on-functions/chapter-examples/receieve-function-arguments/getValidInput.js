@@ -11,7 +11,18 @@ function getValidInput(prompt, isValid) {
 
     return userInput;
 }
+// let isValid = function(userInput) {
+//   console.log("Invalid input. Try again. ");
+//   userInput = input.question[0] === 'a';
+// }
+let isValid = function(userInput) {
+  if (userInput.question[0] === 'a' || 'A') {
+    return true;
+  }
+  return false;
+};
 
+console.log(getValidInput('Select a vowel.'))
 // TODO 1: write a validator 
 // that ensures input starts with "a"
 
