@@ -19,3 +19,9 @@ console.log(fox);
 console.log(fox.age, fox.color);
 
 //Try modifying or adding properties below.
+
+fox.name = 'newFox';
+console.log(fox);
+
+let horse = new Astronaut('Horse', 12, 224);
+console.log(horse);
